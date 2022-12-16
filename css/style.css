@@ -1,0 +1,686 @@
+* {
+    font-family: "Red Hat Display";
+}
+
+.menubar {
+    width: 90%;
+    display: flex;
+}
+
+.left_menubar {
+    float: left;
+}
+
+.right_menubar {
+    float: right;
+    width: 50%;
+    display: flex;
+}
+
+.get_started_button {
+    border-radius: 0px;
+    width: 170px;
+}
+
+.menu_items a {
+    color: white;
+    position: relative;
+}
+
+.menu_items a:after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.menu_items a:hover {
+    color: white;
+}
+
+.menu_items a:hover:after {
+    width: 100%;
+}
+
+.full_slider_with_menubar {
+    position: relative;
+    height: 640px;
+    overflow: hidden;
+}
+
+.full_slider_with_menubar2 {
+    position: relative;
+    overflow: hidden;
+}
+
+.only_menubar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.active .image {
+    animation: grow 5s;
+    overflow: hidden;
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+.image2 {
+    transform: scale(1.2);
+}
+
+.active .image2 {
+    animation: grow2 5s;
+    overflow: hidden;
+}
+
+@keyframes grow2 {
+    /*0% {*/
+    /*    transform: scale(1.2);*/
+    /*}*/
+    100% {
+        transform: scale(1);
+    }
+}
+
+.caption1 {
+    position: absolute;
+    top: 29%;
+    left: 37%;
+    z-index: 1000;
+    color: white;
+}
+
+.active .caption1 {
+    animation: sliding22 4s;
+}
+
+@keyframes sliding22 {
+    0% {
+        left: 57%;
+        opacity: 0;
+    }
+    25% {
+        left: 57%;
+        opacity: 0;
+    }
+    50% {
+        left: 37%;
+        opacity: 1;
+    }
+}
+
+.caption2 {
+    position: absolute;
+    top: 34%;
+    left: 33%;
+    z-index: 1000;
+    color: white;
+}
+
+.active .caption2 {
+    animation: sliding3 4s;
+}
+
+@keyframes sliding3 {
+    0% {
+        left: 47%;
+        opacity: 0;
+    }
+    25% {
+        left: 33%;
+        opacity: 1;
+    }
+}
+
+.menu_items a:hover {
+    text-decoration: white 1px;
+}
+
+.contact_online {
+    background-color: #FAAD22;
+    height: 130px;
+    width: 100%;
+}
+
+.image {
+    background-size: contain;
+}
+
+.writing {
+    float: left;
+    font-size: xx-large;
+    font-weight: 400;
+}
+
+.contact_online_button {
+    float: right;
+    margin-top: 10px;
+    border: solid 1px black;
+}
+
+.contact_online_button:hover {
+    background-color: black;
+    color: white;
+}
+
+.container1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.do_writing {
+    /*margin-top: 30px;*/
+}
+
+.do_writing p {
+    opacity: 0.9;
+    font-family: "Red Hat Display";
+}
+
+.what_we_do {
+    margin-top: 70px;
+    font-family: "Red Hat Display";
+}
+
+.bg_transparent {
+    width: 100%;
+    height: 640px;
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 700;
+}
+
+.caption_parent {
+    z-index: 1000;
+}
+
+.about_button a {
+    width: 230px;
+    text-align: center;
+    border-radius: unset;
+}
+
+.premium_services {
+    background-color: #F8F8F8;
+}
+
+.premium_heading {
+    color: #A7A7A7;
+    opacity: 0.9;
+}
+
+.we_do_container {
+    overflow: hidden;
+}
+
+.premium {
+    height: 250px;
+    width: 100%;
+}
+
+.premium_link a {
+    text-decoration: none;
+}
+
+.premium_link:hover {
+    color: #ffc107;
+}
+
+.premium_link:hover .fa-fingerprint {
+    color: black;
+}
+
+.premium_link:hover .fa-bell {
+    color: black;
+}
+
+.premium_link:hover .fa-eye {
+    color: black;
+}
+
+.premium_link:hover .fa-intercom {
+    color: black;
+}
+
+.premium_link:hover .fa-dungeon {
+    color: black;
+}
+
+.card_items {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.card_items img {
+    text-align: center;
+}
+
+.card_items:hover {
+    background-color: #ffc107;
+}
+
+.card_items h5, p {
+    color: black;
+}
+
+.card_items h5 {
+    font-size: 30px;
+}
+
+#vdo_img {
+    background-image: url("../img/video_image.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    display: grid;
+}
+
+.bg_transparent2 {
+    width: 100%;
+    height: inherit;
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 700;
+}
+
+.video_img {
+    z-index: 100;
+}
+
+#counter {
+    font-size: 10em;
+    color: #181818;
+    opacity: 0.4;
+}
+
+.counter1, .counter2, .counter3, .counter4 {
+    text-align: center;
+}
+
+.divider {
+    float: right;
+    height: 60px;
+    width: 1px;
+    background-color: black;
+    margin-top: 50%;
+    z-index: 10;
+}
+
+.contact {
+    position: relative;
+    background-image: url("../img/contact.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 640px;
+    width: 100%;
+}
+
+.footer_part {
+    background-color: black;
+    color: white;
+}
+
+/*.footer_part2 {*/
+/*    padding-top: 70px;*/
+/*}*/
+
+.footer_link a {
+    text-decoration: none;
+}
+
+.footer_logo {
+    display: flex;
+}
+
+.footer_logo2 {
+    width: 25%;
+}
+
+.footer_logo2 i {
+    width: 100%;
+}
+
+.fa-facebook-square {
+    background-color: black;
+    color: white;
+}
+
+.fa-phone-alt {
+    color: white;
+}
+
+.fa-whatsapp-square {
+    background-color: black;
+    color: white;
+}
+
+.fa-envelope-square {
+    background-color: black;
+    color: white;
+}
+
+.fa-fingerprint {
+    color: #ffc107;
+}
+
+.fa-bell {
+    color: #ffc107;
+}
+
+.fa-eye {
+    color: #ffc107;
+}
+
+.fa-intercom {
+    color: #ffc107;
+}
+
+.fa-dungeon {
+    color: #ffc107;
+}
+
+.about h2 {
+    text-align: center;
+}
+
+.what_we_do_content {
+    background-color: #FFE401;
+}
+
+.what_we_do_heading {
+    opacity: 0.9;
+    font-family: "Red Hat Display";
+    text-align: center;
+}
+
+.what_we_do_content h4 {
+    text-align: center;
+}
+
+.separator {
+    height: 20px;
+    width: inherit;
+}
+
+#cctv_img {
+    height: 60px;
+    width: 40px;
+    position: relative;
+}
+
+.contact_form {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+
+.form_container {
+    padding: 30px 30px 30px 30px;
+}
+
+.customer-indicators
+{
+    top: 450px;
+}
+
+.member-image
+{
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    margin-left: 40%;
+}
+
+.customer-caption
+{
+    position: relative;
+    top: 30px;
+    width: 70%;
+    height: 250px;
+    padding: 20px;
+    color: black;
+}
+
+.prev {
+    background-color: black;
+    color: black;
+}
+
+.next {
+    background-color: black;
+    color: black;
+}
+
+.officials_info {
+    text-decoration: underline;
+    color: #0c63e4;
+}
+
+.officials_info:hover {
+    cursor: pointer;
+}
+
+.mam_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.mam_writing {
+    font-size: 20px;
+}
+
+.footer_sister {
+    width: 100%;
+    transition: transform .5s ease;
+    cursor: pointer;
+}
+
+.footer_sister2 {
+    width: 10%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform .5s ease;
+    cursor: pointer;
+}
+
+.footer_sister2:hover {
+    transform: scale(1.2);
+}
+
+.logo_center {
+   margin: auto;
+}
+
+.new_menu_items {
+    justify-content: center;
+}
+
+#cctv_img img.cctv2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.premium:hover img.cctv2 {
+    opacity: 1;
+}
+
+.vdo_button {
+    border: solid 1px white;
+    border-radius: 50% !important;
+    margin: auto;
+    z-index: 1000;
+    color: white;
+    width: 10%;
+    height: 20%;
+}
+
+.form_container input[type=text] {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid #D8D8D8;
+}
+
+.submit_button {
+    border-radius: none;
+}
+
+.vdo_button:hover {
+    border: solid 1px white !important;
+}
+
+.video {
+    display: none;
+    z-index: 1000;
+    width: inherit;
+    height: inherit;
+}
+
+.fingerprint_image {
+    background-image: url("../img/fingerprint.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: auto;
+    max-width: 100%;
+    background-size: cover;
+    position: relative;
+    display: grid;
+}
+
+.contact_items:hover .fa-clock, .contact_items:hover .fa-map-marker-alt, .contact_items:hover .fa-headphones {
+    color: #ffc107;
+}
+
+.map {
+    width: 100%;
+    height: 100vh;
+}
+
+.trade {
+    background-image: url("../img/trade.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 670px;
+    width: 100%;
+    background-size: contain;
+    position: relative;
+    display: grid;
+}
+
+.business {
+    background-image: url("../img/EESA.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 530px;
+    width: 100%;
+    background-size: contain;
+    position: relative;
+    display: grid;
+}
+
+.footer_logo2 {
+    transition: transform .5s ease;
+}
+
+.footer_logo2:hover {
+    transform: scale(1.2);
+}
+
+.footer_sister:hover {
+    transform: scale(1.2);
+}
+
+.mp {
+    background-color: black;
+    height: 300px;
+}
+
+.sister_concerns {
+    background-color: #FAAD22;
+}
+
+.button {
+    background-color: #FAAD22;
+}
+
+.button:hover {
+    background-color: #ffc107;
+}
+
+.official_designation {
+    height: 557px;
+}
+
+.official_designation2 {
+    height: 370px;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active2 {
+    transform: translateY(0);
+    opacity: 1;
+    /*animation: fade-bottom 1s ease-in;*/
+}
+
+.reveal2 {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal2.active3 {
+    transform: translateY(0);
+    opacity: 1;
+    /*animation: fade-bottom 1s ease-in;*/
+}
+
+/*@keyframes fade-bottom {*/
+/*    0% {*/
+/*        transform: translateY(50px);*/
+/*        opacity: 0;*/
+/*    }*/
+/*    100% {*/
+/*        transform: translateY(0);*/
+/*        opacity: 1;*/
+/*    }*/
+/*}*/
